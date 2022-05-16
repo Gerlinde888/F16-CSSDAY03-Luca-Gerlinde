@@ -34,11 +34,7 @@ h1{
 .container2 {
     display: flex;
     border-bottom: 14px solid black;
-    width: 95%;
-    margin: auto;
-    flex-direction: row;
-    align-items:start;
-    /* align-content:space-between; */
+    flex-direction: column;
 }
 .right{
     align-self: end;
@@ -50,7 +46,7 @@ h1{
     border-bottom: 1px solid blue;
 }
 .row1 p:first-child{
-    flex-basis: 70%;
+    flex-basis: 100%;
     border:1px solid red;
 }
 .row1 p:not(.first-child){
