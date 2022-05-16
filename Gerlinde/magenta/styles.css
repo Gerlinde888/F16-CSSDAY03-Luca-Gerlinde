@@ -1,0 +1,8 @@
+body {
+    background-color: #e01275;
+}
+.flexbox >* {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
