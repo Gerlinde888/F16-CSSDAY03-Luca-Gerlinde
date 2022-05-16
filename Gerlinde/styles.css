@@ -1,27 +1,28 @@
 body {
+    margin: 0;
     /* line-height: 15px; */
-    font-family: Arial;
+    /* font-family: Arial;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bold; */
+    box-sizing: border-box;
 }
 
-#container {
+.box {
     border: 1px solid black;
+    width: fit-content;
+    margin: 5px;
     /* padding: 5px; */
 
 }
-.container1 {
+.flexbox {
     display: flex;
-    border-bottom: 14px solid black;
-    width: 95%;
-    margin: auto;
+    padding: 1%;
     flex-direction: column;
-    align-items:start;
     /* align-content:space-between; */
 }
-.container1 p {
+/* .flexbox p {
     margin-bottom: -2px;
-}
+} */
 hr {
     size: 10px;
     color: black;
@@ -31,26 +32,49 @@ h1{
     margin-bottom: -16px;
     margin-top:-6px;
 }
-.container2 {
-    display: flex;
-    border-bottom: 14px solid black;
-    flex-direction: column;
-}
-.right{
-    align-self: end;
-    border-bottom: 14px solid red;
-}
-.row1{
+
+.row{
     display:flex;
     align-items: flex-end;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid green;
+    justify-content: space-between;
 }
-.row1 p:first-child{
-    flex-basis: 100%;
+.row p:first-child{
+    flex-basis: 70%;
+    width:fit-content;
+    text-align:left;
     border:1px solid red;
 }
-.row1 p:not(.first-child){
+.row p:not(.first-child){
+    flex-basis: 15%;
+    text-align: right;
+    border: 1px solid blue;
+}
+.balken {
+    height: 14px;
+    background-color: black;
+}
+.row_abstand {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid green;
+    justify-content: space-between;
+}
+.row_abstand p:first-child {
+    flex-basis: 70%;
+}
+.row_abstand p:not(.first-child){
     flex-basis: 15%;
     text-align: end;
-    border: 1px solid green;
+    border: 1px solid blue;
+}
+.row_grosz {
+    background-color: black;
+    height: 8px;
+    width: 100%;
+}
+.row_klein {
+    background-color: black;
+    height: 4pxem;
+    width: 100%;
 }
