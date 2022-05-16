@@ -38,12 +38,14 @@ h1{
     align-items: flex-end;
     border-bottom: 1px solid green;
     justify-content: space-between;
+
 }
 .row p:first-child{
     flex-basis: 70%;
     width:fit-content;
-    text-align:left;
-    border:1px solid red;
+    align-self:flex-start;
+    border:1px solid yellow;
+
 }
 .row p:not(.first-child){
     flex-basis: 15%;
